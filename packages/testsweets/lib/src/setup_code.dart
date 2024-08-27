@@ -111,8 +111,7 @@ Future<void> setupTestSweets({bool enabled = TEST_SWEETS_ENABLED}) async {
           }
 
         case DriverCommandType.modeUpdate:
-          locator<RunConfigurationService>().driveModeActive =
-              driverCommand.value;
+          locator<RunConfigurationService>().driveModeActive = driverCommand.value;
 
           final commandResult = DriverCommandResult(
             type: DriverCommandType.modeUpdate,
